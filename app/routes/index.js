@@ -11,7 +11,7 @@ export default Ember.Route.extend({
 		toggleText: function() {
 			$('.header-text').click(function() {
 				$(this).text(function(_, text) {
-					return text === "Find Lunch" ? "Quick and Easy" : "Find Lunch";
+					return text === "Lunch.er" ? "Find Lunch" : "Lunch.er";
 				});
 			});
 		}

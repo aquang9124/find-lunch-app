@@ -1,7 +1,7 @@
 <div class="row">
 	<header class="header-image">
-		<h2 class="text-wrapper text-center"><span class="header-text" {{action 'toggleText'}}>Find Lunch</span></h2>
-		<span class="down-arrow"></span>
+		<h2 class="text-wrapper text-center"><span class="header-text" {{action 'toggleText'}}>Lunch.er</span></h2>
+		<span class="down-arrow header-arrow"></span>
 	</header>
 </div>
 <div class="row">
@@ -9,7 +9,10 @@
 		<section class="text-center about-us" id="about">
 			<h2 class="lunch-tagline">Find Your Next Lunching Location</h2>
 			<p class="text-justify about-paragraph">Are you hungry? Is it almost lunch time? Don't know where to go to find your next great meal? If you are looking for information about where to eat next, you are in the right place. There are many things that you can try typing into the query box. For example, if you type 'pizza', you will get a list of pizza places near your location. Try it out!</p>
-			<img src="/assets/images/laptop.jpeg" alt="A tablet about to do a google search" class="search-image">
+			<a href="javascript:void(0)" class="darken" {{action 'jumpToAnchor' "find"}}>
+				<img src="/assets/images/laptop.jpeg" alt="A tablet about to do a google search" class="search-image">
+				<span class="down-arrow img-arrow"></span>
+			</a>
 		</section>	
 	</div>
 </div>

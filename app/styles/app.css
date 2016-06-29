@@ -6,7 +6,7 @@ html, body {
 	height: 100%;
 	margin: 0;
 	font-family: 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color: #333;
+	color: #777;
 }
 
 body {
@@ -61,11 +61,11 @@ body {
 
 .text-wrapper {
 	position: absolute;
-	top: 35%;
+	top: 30%;
 	left: 0;
 	right: 0;
-	background: rgba(255, 255, 255, 0.85);
-	height: 150px;
+	color: #fff;
+	height: 250px;
 	width: 70%;
 	margin: 0 auto;
 	border-radius: 10px;
@@ -74,7 +74,7 @@ body {
 
 .text-wrapper .header-text {
 	position: absolute;
-	top: 32%;
+	top: 37%;
 	left: 0;
 	right: 0;
 	font-size: 1.7em;
@@ -87,7 +87,7 @@ body {
 }
 
 /* down arrow stylings */
-.down-arrow {
+span.down-arrow {
 	display: block;
 	position: absolute;
 	top: 91.5%;
@@ -100,7 +100,10 @@ body {
     border-right: 0.2em solid #fff;
     border-top: 0.2em solid #fff;
     transform: rotate(135deg);
-    cursor: default;
+}
+
+.header-arrow {
+	cursor: default;
 	-webkit-animation: pulse 1.3s infinite alternate;
     -moz-animation: pulse 1.3s infinite alternate;
     animation: pulse 1.3s infinite alternate;
@@ -120,11 +123,42 @@ body {
 }
 
 /* stylings for google searching image */
-.search-image {
+.darken {
+	display: inline-block;
+	background: black;
+	padding: 0;
+}
+
+img.search-image {
 	display: block;
 	margin: 0 auto;
 	width: 100%;
 	height: 100%;
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-ms-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+}
+
+img.search-image:hover {
+	-webkit-box-shadow: 0px 0px 10px black;
+	box-shadow: 0px 0px 10px black;
+	opacity: 0.7;
+}
+
+img.search-image:hover + span.img-arrow {
+	display: block;
+	top: 60%;
+}
+
+span.img-arrow:hover {
+	display: block;
+	top: 60%;
+}
+
+span.img-arrow {
+	display: none;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 720px) {
