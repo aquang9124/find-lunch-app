@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+/* html, body stylings  */
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	font-family: 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #333333;
+}
+
+body {
+	padding-top: 50px;
+}
+
+/* Navbar stylings */
+.white-nav {
+	background-color: #fff;
+}
+
+.navbar-default .nav > li > .nav-links:hover {
+	color: #e88420;
+}
+
+/* Overwrite the margin bottom for bootstrap navbar */
+.navbar {
+	margin-bottom: 0;
+}
+
+/* about us stylings */
+.about-us {
+	width: calc(100% - 200px);
+	height: 100%;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+
+.lunch-tagline {
+	color: #e88420;
+	margin-bottom: 1.1em;
+}
+
+.about-paragraph {
+	margin-bottom: 3.2em;
+}
+
+/* Stylings for header */
+.header-image {
+	position: relative;
+	min-height: calc(100vh - 50px);
+	width: 100%;
+	background: 
+		linear-gradient(
+	      rgba(0, 0, 0, 0.5), 
+	      rgba(0, 0, 0, 0.5)
+	    ),
+		url('/assets/images/sushi.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+/* class that adds a top margin to rows */
+.top-buffer {
+	margin-top: 20px;
+}
+
+/* down arrow stylings */
+.down-arrow {
+	display: block;
+	position: absolute;
+	top: 92%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 1.5em;
+    height: 1.5em;
+    border-right: 0.2em solid #fff;
+    border-top: 0.2em solid #fff;
+    transform: rotate(135deg);
+    cursor: default;
+	-webkit-animation: pulsate 0.9s infinite alternate;
+    -moz-animation: pulsate 0.9s infinite alternate;
+    -animation: pulsate 0.9s infinite alternate;
+}
+
+@-webkit-keyframes pulsate {
+    from { top: 92%; }
+    to { top: 95%; }
+}
+@-moz-keyframes pulsate {
+    from { top: 92%; }
+    to { top: 95%; }
+}
+@keyframes pulsate {
+    from { top: 92%; }
+    to { top: 95%; }
+}
+
+/* stylings for google searching image */
+.search-image {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	height: 70%;
+}
+
