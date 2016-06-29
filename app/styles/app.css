@@ -16,6 +16,7 @@ body {
 /* Navbar stylings */
 .white-nav {
 	background-color: #fff;
+	box-shadow: 0 0 2px black;
 }
 
 .navbar-default .nav > li > .nav-links:hover {
@@ -66,7 +67,7 @@ body {
 	right: 0;
 	color: #fff;
 	height: 250px;
-	width: 70%;
+	width: calc(100% - 204px);
 	margin: 0 auto;
 	border-radius: 10px;
 	border: 2px solid #e88420;
@@ -161,8 +162,47 @@ span.img-arrow {
 	display: none;
 }
 
+/* Finder stylings */
+.food-search {
+	height: 100vh;
+	border-top: 2px solid #f6f6f6;
+	padding: 50px 0;
+}
+
+section.food-search > h2 {
+	color: #e88420;
+}
+
+form.search-form {
+	width: calc(100% - 200px);
+	margin: 0 auto;
+}
+
+button.btn-orange {
+	background-color: #E88420;
+	border: 1px solid #D37520;
+	color: #fff;
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+}
+
+button.btn-orange:hover {
+	color: #fff;
+	background-color: #D37520;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 720px) {
 	.about-us {
+		width: calc(100% - 60px);
+	}
+
+	form.search-form {
+		width: calc(100% - 60px);
+	}
+
+	.text-wrapper {
 		width: calc(100% - 60px);
 	}
 
