@@ -23,12 +23,18 @@
 			<form role="form" class="search-form">
 				<div class="form-group">
 					<label>Search:</label>
-					<input type="text" class="form-control search-input">
+					{{input type="text" class="form-control" id="search-input"}}
 				</div>
 				<div class="form-group">
-					<button class="btn btn-orange pull-left">Find</button>
+					<button class="btn pull-left" id="btn-orange" {{action "createMap" preventDefault=true}}>Find</button>
 				</div>
 			</form>
+			{{google-mapper}}
 		</section>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-12">
+		<a id="github-repo-link" href="https://github.com/aquang9124/find-lunch-app" target="_blank">Github Repository</a>
 	</div>
 </div>
